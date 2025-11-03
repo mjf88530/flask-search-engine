@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="icon" href="http://obj-cache.cloud.ruanbekker.com/favicon.ico">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+<!--    <title>Search Engine</title>-->
+
+</head>
+<body>
+  <div class="container">
+    <div style="background:transparent !important" class="jumbotron">
+<!--      <div style="font-family: 'Times New Roman', Times, serif;">-->
+      <div style="font-family: 'Lucida Handwriting', Courier New, Cursive;">
+        <p>
+          <center>
+          <font size="8">Search Engine</font>
+          </center>
+        </p>
+      </div>
+    </div>
+
+    <form action="/search" method="get">
+        <div class="input-group">
+<!--            <input type="text" name="wd" value = {{val}}>-->
+        <input type="text" class="form-control input-lg" name="wd" placeholder="Enter A Word To Search" autofocus>
+            <div class="input-group-btn">
+<!--        <input type="submit" value="Submit">-->
+                <button class="btn btn-primary btn-lg" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+    <ul>
+        {% for n in content %}
+            <li>{{n}}</li>
+        {% endfor %}
+    </ul>
+
+    <br><br>
+      <footer class="footer">
+        <p>&copy; Summer 2021 (ICS 33) Jianfeng Ma, Chi Zhang, Ji Wang | 8.20</p>
+      </footer>
+
+      </div>
+<!--  </div>-->
+  </body>
+</html>

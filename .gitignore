@@ -1,0 +1,10 @@
+__pycache__/
+.venv/
+
+app/index.dat
+app/history.pkl
+
+app/large-sample/**
+
+!app/document.csv
+!app/terms.csv

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+<!--    <link rel="icon" href="http://obj-cache.cloud.ruanbekker.com/favicon.ico">-->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Search Engine</title>
+
+</head>
+<body>
+  <div class="container">
+    <div style="background:transparent !important" class="jumbotron">
+      <div style="font-family: 'Times New Roman', Times, serif;">
+        <p>
+          <center>
+          <font size="8">Enter A Word To Search</font>
+          </center>
+        </p>
+      </div>
+    </div>
+
+    <form action="/search" method="get">
+        <input type="text" name="wd" value = {{val}}>
+        <input type="submit" value="Submit">
+    </form>
+    <ul>
+        {% for n in content %}
+            <li>{{n}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
